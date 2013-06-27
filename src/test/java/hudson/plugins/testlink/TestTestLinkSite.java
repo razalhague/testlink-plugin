@@ -175,7 +175,7 @@ public class TestTestLinkSite {
 		
 		when(api.getTestCasesForTestPlan(anyInt(), anyListOf(Integer.class),
 				anyInt(), anyListOf(Integer.class), anyString(), anyBoolean(),
-				anyListOf(Integer.class), anyString(),
+				anyListOf(Integer.class), any(String[].class),
 				any(ExecutionType.class), anyBoolean(),
 				any(TestCaseDetails.class))).thenReturn(returnedTestCases);
 		
@@ -196,7 +196,7 @@ public class TestTestLinkSite {
 		
 		when(api.getTestCasesForTestPlan(anyInt(), anyListOf(Integer.class),
 				anyInt(), anyListOf(Integer.class), anyString(), anyBoolean(),
-				anyListOf(Integer.class), anyString(),
+				anyListOf(Integer.class), any(String[].class),
 				any(ExecutionType.class), anyBoolean(),
 				any(TestCaseDetails.class))).thenReturn(returnedTestCases);
 		
